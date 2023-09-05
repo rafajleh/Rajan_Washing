@@ -84,7 +84,6 @@ public class MainActivity extends AppCompatActivity {
 
                 DownloadManager.Request request = new DownloadManager.Request(
                         Uri.parse(url));
-
                 request.allowScanningByMediaScanner();
                 request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED); //Notify client once download is completed!
                 request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, fileName);
